@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "@pages/Home";
 import Navigation from "@components/Navigation";
