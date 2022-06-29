@@ -1,11 +1,11 @@
-import "./Intro.css";
+import "./Animation.css";
 import React, { useRef } from "react";
 import gsap from "gsap-trial";
 import DrawSVGPlugin from "gsap-trial/DrawSVGPlugin";
 
 gsap.registerPlugin(DrawSVGPlugin);
 
-export default function Intro() {
+export default function Animation() {
   const letterDuration = 2.5;
   const svg = useRef(null);
   const paths = svg.current;
