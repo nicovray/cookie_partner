@@ -1,5 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Profile from "./pages/Profile";
+import Animation from "./components/Animation";
 import Home from "@pages/Home";
 import Intro from "@pages/Intro";
 import Profile from "@pages/Profile";
@@ -15,6 +17,7 @@ function App() {
           <Route path="/myaccount" element={<Profile />} />
         </Routes>
       </Router>
+      <Animation />
     </div>
   );
 }
