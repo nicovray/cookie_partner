@@ -1,57 +1,57 @@
 .logo {
-    width: 20rem;
-    position: absolute;
-    width: 349px;
-    height: 100px;
-    left: 1064px;
-    top: 27px;
+  width: 20rem;
+  position: absolute;
+  width: 349px;
+  height: 100px;
+  left: 1064px;
+  top: 27px;
 }
 .image-intro {
-    position: absolute;
-    width: 1305px;
-    height: 1029px;
-    left: 0px;
+  position: absolute;
+  width: 1305px;
+  height: 1029px;
+  left: 0px;
 }
 .title-intro {
-    position: absolute;
-    width: 401px;
-    height: 104px;
-    left: 124px;
-    top: 397px;
+  position: absolute;
+  width: 401px;
+  height: 104px;
+  left: 124px;
+  top: 397px;
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 .explications-intro {
-    position: absolute;
-    width: 297px;
-    height: 237px;
-    left: 127px;
-    top: 458px;
+  position: absolute;
+  width: 297px;
+  height: 237px;
+  left: 127px;
+  top: 458px;
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
 
-    color: #000000;
+  color: #000000;
 }
 .button-getstarted {
-    position: absolute;
-    width: 204px;
-    height: 64px;
-    left: 120px;
-    top: 631px;
-    color: #ffffff;
-    font-size: 1rem;
-    border: none;
-    
-    background: #3E69D1;
-    border-radius: 35px;
+  position: absolute;
+  width: 204px;
+  height: 64px;
+  left: 120px;
+  top: 631px;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+
+  background: #3e69d1;
+  border-radius: 35px;
 }

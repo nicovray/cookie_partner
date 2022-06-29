@@ -1,0 +1,56 @@
+.authentification-container {
+  background-color: #3e69d1;
+  width: 100vw;
+  height: 1024px;
+}
+
+.logowhite {
+  position: absolute;
+  width: 831px;
+  height: 273px;
+  left: 305px;
+  top: 304px;
+}
+
+.button-login {
+  position: absolute;
+  width: 380px;
+  height: 97px;
+  left: 547px;
+  top: 631px;
+  background: #5ec9af;
+  border-radius: 57px;
+  border: none;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+
+  color: #ffffff;
+}
+
+.button-registration {
+  position: absolute;
+  width: 380px;
+  height: 97px;
+  left: 546px;
+  top: 2857px;
+  left: 547px;
+  top: 782px;
+  background: #041678;
+  border-radius: 57px;
+  border: none;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+
+  color: #ffffff;
+}
+
+.buttons-authentification {
+}

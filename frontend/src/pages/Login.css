@@ -1,0 +1,77 @@
+.login-container {
+  background-color: #5ec9af;
+  width: 100vw;
+  height: 1024px;
+}
+
+.title-login {
+  position: absolute;
+  width: 1440px;
+  height: 130px;
+  left: 0px;
+  top: 244px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.inputlogmail {
+  position: absolute;
+  width: 620px;
+  height: 106px;
+  left: 410px;
+  top: 338px;
+  border: none;
+  background: #ffffff;
+  border-radius: 70px;
+
+  text-align: center;
+  font-size: 1.8rem;
+  color: #041678;
+}
+
+.inputlogpassword {
+  position: absolute;
+  width: 620px;
+  height: 106px;
+  left: 410px;
+  top: 490px;
+  border: none;
+  background: #ffffff;
+  border-radius: 70px;
+
+  text-align: center;
+  font-size: 1.8rem;
+  color: #041678;
+}
+
+::placeholder {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #bdc3cf;
+}
+
+.button-validate-login {
+  position: absolute;
+  width: 284px;
+  height: 92px;
+  left: 578px;
+  top: 796px;
+  background: #3e69d1;
+  border-radius: 46px;
+  border: none;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+}
