@@ -1,5 +1,8 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable import/no-extraneous-dependencies */
-import { useState } from "react";
+import Navigation from "@components/Navigation";
+import React, { useState, useEffect } from "react";
+import { Widget, addResponseMessage } from "react-chat-widget";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import OutlinedInput from "@mui/material/OutlinedInput";
@@ -7,17 +10,28 @@ import InputLabel from "@mui/material/InputLabel";
 import Checkbox from "@mui/material/Checkbox";
 import ListItemText from "@mui/material/ListItemText";
 import Swal from "sweetalert2";
-import Navigation from "../components/Navigation";
+import imageideaplant from "../assets/image_idea_plant.png";
+import persona1 from "../assets/persona1.jpg";
 import "./Publish.css";
 
 export default function Publish() {
   const [name, setName] = useState("");
+  const [date, setDate] = useState("");
   const [categoryProject, setCategoryProject] = useState("");
   const [description, setDescription] = useState("");
   const [languages, setLanguages] = useState([]);
   const [resources, setResources] = useState("");
   const [collaborators, setCollaborators] = useState([]);
   const [tags, setTags] = useState([]);
+
+  useEffect(() => {
+    addResponseMessage("Do you think we can call later?");
+  }, []);
+
+  const handleNewUserMessage = (newMessage) => {
+    console.log(`New message incoming! ${newMessage}`);
+    // Now send the message throught the backend API
+  };
 
   const options = [
     "Javascript",
@@ -99,15 +113,12 @@ export default function Publish() {
     e.preventDefault();
     Swal.fire({
       title: "Congratulations, your project is saved!",
-      width: 600,
-      padding: "3em",
-      color: "#716add",
-      background: "#fff url(/images/trees.png)",
+      width: 400,
+      padding: "2rem",
+      color: "#041678",
+      background: "#ffff",
       backdrop: `
-        rgba(0,0,123,0.4)
-        url("/images/nyan-cat.gif")
-        left top
-        no-repeat
+        "#041678"
       `,
     });
   };
@@ -127,6 +138,18 @@ export default function Publish() {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+
+          <label className="project_label" htmlFor="date">
+            {`Project's end date`}
+            <input
+              className="project_input"
+              id="date"
+              name="date"
+              type="text"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
             />
           </label>
 
@@ -161,7 +184,7 @@ export default function Publish() {
             Languages used
             <InputLabel className="project-input" />
             <Select
-              labelId="dproject-input"
+              labelId="project-input"
               id="project-input"
               multiple
               value={languages}
@@ -240,8 +263,17 @@ export default function Publish() {
           <button className="button" type="submit">
             Add your project
           </button>
+          <div className="div-image-idea-plant">
+            <img className="image-idea-plant" src={imageideaplant} alt="" />
+          </div>
         </form>
       </div>
+      <Widget
+        handleNewUserMessage={handleNewUserMessage}
+        profileAvatar={persona1}
+        title="My chat with Jessica"
+        subtitle="What's up?"
+      />
     </div>
   );
 }

@@ -1,10 +1,13 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import imageintro from "../assets/image-intro-desktop.png";
 import logointro from "../assets/logo_apseed.png";
 import plant from "../assets/plant.gif";
 import "./Intro.css";
 
 function Intro() {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="intro-container">
@@ -29,9 +32,13 @@ function Intro() {
             let it grow as a <strong>real Project</strong> !
           </p>
         </p>
-        <button type="button" className="button-getstarted">
-          Get Started
-        </button>
+         <button
+        type="button"
+        className="button-getstarted"
+        onClick={() => navigate("../authentification", { replace: true })}
+      >
+        Get Started
+      </button>
       </div>
       <div>
         <img className="plant-icon" src={plant} alt="plant" />

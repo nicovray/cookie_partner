@@ -1,16 +1,12 @@
 .logointro {
   width: 20rem;
   position: absolute;
-  width: 349px;
-  height: 100px;
-  left: 1064px;
-  top: 27px;
+  width: 25%;
+  left: 58rem;
+  top: 2rem;
 }
 .image-intro {
-  position: absolute;
-  width: 1305px;
-  height: 1029px;
-  left: 0px;
+  width: 100vw;
 }
 .title-intro {
   position: absolute;
@@ -22,8 +18,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 2rem;
 
   color: #ffffff;
 }
@@ -37,8 +32,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.2rem;
 
   color: #000000;
 }
@@ -48,11 +42,12 @@
   height: 64px;
   left: 120px;
   top: 700px;
+
   color: #ffffff;
   font-size: 1rem;
   border: none;
   background: #3e69d1;
-  border-radius: 35px;
+  border-radius: 5rem;
 }
 
 .button-getstarted {
