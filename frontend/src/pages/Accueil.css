@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap");
 
 .home-accueil {
   width: 100vw;
@@ -24,7 +24,7 @@
 
 .bloc-accueil h1 {
   font-size: 4rem;
-  font-family: 'Send Flowers', cursive;
+  font-family: "Send Flowers", cursive;
   line-height: 1;
 }
 .bloc-accueil h1 span {
@@ -32,20 +32,20 @@
   opacity: 0;
   transform: translateY(-30px);
 }
-.bloc-accueil h1 > span:nth-child(1){
+.bloc-accueil h1 > span:nth-child(1) {
   animation: apparition 3s 0.4s ease-out forwards;
 }
-.bloc-accueil h1 > span:nth-child(2){
+.bloc-accueil h1 > span:nth-child(2) {
   animation: apparition 3s 0.8s ease-out forwards;
 }
 
-.your-projects{
+.your-projects {
   position: absolute;
   right: 40px;
 }
 
 @keyframes apparition {
-  100%{
+  100% {
     opacity: 1;
     transform: none;
   }
