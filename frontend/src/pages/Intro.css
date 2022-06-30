@@ -46,12 +46,12 @@
 	position: absolute;
 	width: 297px;
 	height: 237px;
-	left: 127px;
+	left: 2rem;
 	top: 250px;
-  	font-family: "Inter";
+  font-family: "Inter";
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1.2rem;
+	font-size: 2rem;
   	color: #000000;
   }
 
