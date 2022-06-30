@@ -1,20 +1,18 @@
 .login-container {
   background-color: #5ec9af;
   width: 100vw;
-  height: 100vh;
+  height: 75vw;
 }
 
 .title-login {
-  position: absolute;
-  width: 1440px;
-  height: 130px;
-  left: 0px;
-  top: 244px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
 
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2rem;
   line-height: 44px;
   text-align: center;
 
@@ -22,56 +20,71 @@
 }
 
 .inputlogmail {
-  position: absolute;
-  width: 620px;
-  height: 106px;
-  left: 410px;
-  top: 338px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  width: 40rem;
+  height: 6rem;
   border: none;
   background: #ffffff;
-  border-radius: 70px;
+  border-radius: 5rem;
 
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #041678;
 }
 
 .inputlogpassword {
-  position: absolute;
-  width: 620px;
-  height: 106px;
-  left: 410px;
-  top: 490px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 4rem;
+  width: 40rem;
+  height: 6rem;
   border: none;
   background: #ffffff;
-  border-radius: 70px;
+  border-radius: 5rem;
 
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #041678;
 }
 
 ::placeholder {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: #bdc3cf;
 }
 
 .button-validate-login {
-  position: absolute;
-  width: 284px;
-  height: 92px;
-  left: 578px;
-  top: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 4rem;
+  width: 15rem;
+  height: 5rem;
   background: #3e69d1;
-  border-radius: 46px;
+  border-radius: 5rem;
   border: none;
 
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 1.5rem;
+  line-height: 5rem;
   text-align: center;
   color: #ffffff;
+}
+
+.image-connexion-blue {
+  position: absolute;
+  width: 35%;
+  left: 48rem;
+  top: 40.5rem;
+
+  background: url(image_connexion_blue.png);
 }

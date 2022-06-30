@@ -1,20 +1,18 @@
 .registration-container {
   background-color: #3e69d1;
   width: 100vw;
-  height: 100vh;
+  height: 87vw;
 }
 
 .title-registration {
-  position: absolute;
-  width: 1440px;
-  height: 130px;
-  left: 0px;
-  top: 20vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
 
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2rem;
   line-height: 44px;
   text-align: center;
 
@@ -22,29 +20,33 @@
 }
 
 .inputregistrationmail {
-  position: absolute;
-  width: 620px;
-  height: 106px;
-  left: 410px;
-  top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  width: 40rem;
+  height: 6rem;
   border: none;
   background: #ffffff;
-  border-radius: 70px;
+  border-radius: 5rem;
 
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #041678;
 }
 
 .inputregistrationpassword {
-  position: absolute;
-  width: 620px;
-  height: 106px;
-  left: 410px;
-  top: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 4rem;
+  width: 40rem;
+  height: 6rem;
   border: none;
   background: #ffffff;
-  border-radius: 70px;
+  border-radius: 5rem;
 
   text-align: center;
   font-size: 1.8rem;
@@ -52,35 +54,48 @@
 }
 
 .inputconfirmpassword {
-  position: absolute;
-  width: 620px;
-  height: 106px;
-  left: 410px;
-  top: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 4rem;
+  width: 40rem;
+  height: 6rem;
   border: none;
   background: #ffffff;
-  border-radius: 70px;
+  border-radius: 5rem;
 
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #041678;
 }
 
 .button-validate-registration {
-  position: absolute;
-  width: 284px;
-  height: 92px;
-  left: 578px;
-  top: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 4rem;
+  width: 15rem;
+  height: 5rem;
   background: #041678;
-  border-radius: 46px;
+  border-radius: 5rem;
   border: none;
 
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 1.5rem;
+  line-height: 5rem;
   text-align: center;
   color: #ffffff;
+}
+
+.image-registration-green {
+  position: absolute;
+  width: 35%;
+  left: 48rem;
+  top: 50.25rem;
+
+  background: url(image_connexion_green.png);
 }
