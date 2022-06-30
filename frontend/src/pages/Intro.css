@@ -10,8 +10,10 @@
 }
 .title-intro {
   position: absolute;
-  left: 10rem;
-  top: 22rem;
+  width: 401px;
+  height: 104px;
+  left: 124px;
+  top: 50px;
 
   font-family: "Inter";
   font-style: normal;
@@ -22,8 +24,10 @@
 }
 .explications-intro {
   position: absolute;
-  left: 8.5rem;
-  top: 27rem;
+  width: 297px;
+  height: 237px;
+  left: 127px;
+  top: 250px;
 
   font-family: "Inter";
   font-style: normal;
@@ -34,14 +38,30 @@
 }
 .button-getstarted {
   position: absolute;
-  width: 13rem;
-  height: 4rem;
-  left: 7.5rem;
-  top: 39rem;
+  width: 204px;
+  height: 64px;
+  left: 120px;
+  top: 700px;
+
   color: #ffffff;
   font-size: 1rem;
   border: none;
-
   background: #3e69d1;
   border-radius: 5rem;
+}
+
+.button-getstarted {
+
+}
+
+.plant-icon{
+	position: absolute;
+	top: 525px;
+	left: 1350px;
+	width: 25rem;
+}
+
+.explications-intro{
+	line-height: 2.5rem;
+	font-size: 2rem;
 }
