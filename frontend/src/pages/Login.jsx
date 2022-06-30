@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Link } from "react-router-dom";
 import "./Login.css";
+import imageconnexionblue from "../assets/image_connexion_blue.png";
 
 function Login() {
   const [pseudo, setPseudo] = useState("");
@@ -36,6 +37,9 @@ function Login() {
             Validate
           </button>
         </Link>
+      </div>
+      <div className="div-image-connexion-blue">
+        <img className="image-connexion-blue" src={imageconnexionblue} alt="" />
       </div>
     </div>
   );
