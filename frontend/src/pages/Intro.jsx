@@ -32,13 +32,13 @@ function Intro() {
             let it grow as a <strong>real Project</strong> !
           </p>
         </p>
-         <button
-        type="button"
-        className="button-getstarted"
-        onClick={() => navigate("../authentification", { replace: true })}
-      >
-        Get Started
-      </button>
+        <button
+          type="button"
+          className="button-getstarted"
+          onClick={() => navigate("../authentification", { replace: true })}
+        >
+          Get Started
+        </button>
       </div>
       <div>
         <img className="plant-icon" src={plant} alt="plant" />

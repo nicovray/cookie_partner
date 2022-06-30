@@ -6,29 +6,27 @@
   top: 2rem;
 }
 .image-intro {
-  width: 100vw;
+  width: 75vw;
+  height: 60vw;
 }
 .title-intro {
   position: absolute;
   width: 401px;
   height: 104px;
-  left: 124px;
+  left: 3rem;
   top: 50px;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
-
   color: #ffffff;
 }
 .explications-intro {
   position: absolute;
   width: 297px;
   height: 237px;
-  left: 127px;
+  left: 3rem;
   top: 250px;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -51,17 +49,16 @@
 }
 
 .button-getstarted {
-
 }
 
-.plant-icon{
-	position: absolute;
-	top: 525px;
-	left: 1350px;
-	width: 25rem;
+.plant-icon {
+  position: absolute;
+  top: 20rem;
+  left: 65rem;
+  width: 20rem;
 }
 
-.explications-intro{
-	line-height: 2.5rem;
-	font-size: 2rem;
+.explications-intro {
+  line-height: 2.5rem;
+  font-size: 2rem;
 }

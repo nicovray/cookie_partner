@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   border-radius: 79% 21% 76% 24% / 42% 71% 29% 58%;
   background-color: rgba(253, 75, 107, 0.5);
+  margin-top: 5rem;
 }
 
 .userprofile {
