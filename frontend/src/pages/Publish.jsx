@@ -1,5 +1,4 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import Navigation from "@components/Navigation";
 import { useState } from "react";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
@@ -8,6 +7,7 @@ import InputLabel from "@mui/material/InputLabel";
 import Checkbox from "@mui/material/Checkbox";
 import ListItemText from "@mui/material/ListItemText";
 import Swal from "sweetalert2";
+import Navigation from "../components/Navigation";
 import "./Publish.css";
 
 export default function Publish() {
@@ -98,18 +98,18 @@ export default function Publish() {
   const handleSubmit = (e) => {
     e.preventDefault();
     Swal.fire({
-      title: 'Congratulations, your project is saved!',
+      title: "Congratulations, your project is saved!",
       width: 600,
-      padding: '3em',
-      color: '#716add',
-      background: '#fff url(/images/trees.png)',
+      padding: "3em",
+      color: "#716add",
+      background: "#fff url(/images/trees.png)",
       backdrop: `
         rgba(0,0,123,0.4)
         url("/images/nyan-cat.gif")
         left top
         no-repeat
-      `
-    })
+      `,
+    });
   };
   return (
     <div>
