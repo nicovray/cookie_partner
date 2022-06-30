@@ -1,12 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { Link } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
-import {
-  VscLightbulb,
-  VscBellDot,
-  VscCommentDiscussion,
-  VscAccount,
-} from "react-icons/vsc";
+import { VscLightbulb, VscBellDot, VscAccount } from "react-icons/vsc";
 import { FiLogOut } from "react-icons/fi";
 import SearchBar from "./Searchbar";
 import logo from "../assets/logo_apseed_white.png";
@@ -29,7 +24,7 @@ export default function Navigation() {
       <button type="button" className="buttonnotif" onClick={notify}>
         <VscBellDot className="svg-icons" />{" "}
         <Toaster
-          position="bottom-right"
+          position="bottom-left"
           reverseOrder={false}
           gutter={8}
           containerClassName=""
@@ -52,13 +47,6 @@ export default function Navigation() {
             },
           }}
         />
-      </button>
-      <button
-        type="button"
-        className="buttonnotif"
-        onClick={() => toast("You have a new message from Monica")}
-      >
-        <VscCommentDiscussion className="svg-icons" />
       </button>
       <Link to="/myaccount">
         <VscAccount className="svg-icons" />

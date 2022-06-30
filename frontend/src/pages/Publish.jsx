@@ -1,14 +1,17 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable import/no-extraneous-dependencies */
 import Navigation from "@components/Navigation";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Widget, addResponseMessage } from "react-chat-widget";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import Checkbox from "@mui/material/Checkbox";
 import ListItemText from "@mui/material/ListItemText";
-import imageideaplant from "../assets/image_idea_plant.png";
 import Swal from "sweetalert2";
+import imageideaplant from "../assets/image_idea_plant.png";
+import persona1 from "../assets/persona1.jpg";
 import "./Publish.css";
 
 export default function Publish() {
@@ -20,6 +23,15 @@ export default function Publish() {
   const [resources, setResources] = useState("");
   const [collaborators, setCollaborators] = useState([]);
   const [tags, setTags] = useState([]);
+
+  useEffect(() => {
+    addResponseMessage("Do you think we can call later?");
+  }, []);
+
+  const handleNewUserMessage = (newMessage) => {
+    console.log(`New message incoming! ${newMessage}`);
+    // Now send the message throught the backend API
+  };
 
   const options = [
     "Javascript",
@@ -256,6 +268,12 @@ export default function Publish() {
           </div>
         </form>
       </div>
+      <Widget
+        handleNewUserMessage={handleNewUserMessage}
+        profileAvatar={persona1}
+        title="My chat with Jessica"
+        subtitle="What's up?"
+      />
     </div>
   );
 }
