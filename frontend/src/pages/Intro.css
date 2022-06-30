@@ -40,20 +40,19 @@
   height: 64px;
   left: 120px;
   top: 700px;
-
-  }
-  .explications-intro {
-	position: absolute;
-	width: 297px;
-	height: 237px;
-	left: 2rem;
-	top: 250px;
+}
+.explications-intro {
+  position: absolute;
+  width: 297px;
+  height: 237px;
+  left: 2rem;
+  top: 250px;
   font-family: "Inter";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 2rem;
-  	color: #000000;
-  }
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #000000;
+}
 
 .plant-icon {
   position: absolute;
@@ -62,21 +61,19 @@
   width: 20rem;
 }
 
-  .button-getstarted {
-	position: absolute;
-	width: 204px;
-	height: 64px;
-	left: 120px;
-	top: 700px;
-  	color: #ffffff;
-	font-size: 1rem;
-	border: none;
-	background: #3e69d1;
-	border-radius: 5rem;
-  }
+.button-getstarted {
+  position: absolute;
+  width: 204px;
+  height: 64px;
+  left: 120px;
+  top: 700px;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  background: #3e69d1;
+  border-radius: 5rem;
+}
 
 .button-getstarted:hover {
-	background-color: #041678;
-	}
-
-
+  background-color: #041678;
+}
