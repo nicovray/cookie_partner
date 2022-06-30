@@ -17,7 +17,11 @@ function Intro() {
       </div>
       <h1 className="title-intro"> TITLE</h1>
       <p className="explications-intro"> blablabla</p>
-      <button type="button" className="button-getstarted" onClick={()=> navigate("../authentification", { replace: true })}>
+      <button
+        type="button"
+        className="button-getstarted"
+        onClick={() => navigate("../authentification", { replace: true })}
+      >
         Get Started
       </button>
     </div>

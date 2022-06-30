@@ -7,6 +7,7 @@ import {
   VscCommentDiscussion,
   VscAccount,
 } from "react-icons/vsc";
+import { FiLogOut } from "react-icons/fi";
 import SearchBar from "./Searchbar";
 import logo from "../assets/logo_apseed.png";
 import "./Navigation.css";
@@ -61,6 +62,9 @@ export default function Navigation() {
       </button>
       <Link to="/myaccount">
         <VscAccount className="svg-icons" />
+      </Link>
+      <Link to="/authentification">
+        <FiLogOut className="svg-icons" />
       </Link>
     </div>
   );
