@@ -7,7 +7,7 @@ import {
   VscAccount,
 } from "react-icons/vsc";
 import SearchBar from "./Searchbar";
-import logo from "../assets/logo_apseed.png";
+import logo from "../assets/logo_apseed_white.png";
 import "./Navigation.css";
 
 export default function Navigation() {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Link } from "react-router-dom";
 import "./Registration.css";
+import imageconnexiongreen from "../assets/image_connexion_green.png";
 
 function Registration() {
   const [email, setEmail] = useState("");
@@ -45,6 +46,13 @@ function Registration() {
             Validate
           </button>
         </Link>
+      </div>
+      <div className="div-image-registration-green">
+        <img
+          className="image-registration-green"
+          src={imageconnexiongreen}
+          alt=""
+        />
       </div>
     </div>
   );

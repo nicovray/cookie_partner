@@ -1,0 +1,8 @@
+.image-home {
+    position: absolute;
+    width: 45%;
+    left: 355px;
+    top: 487px;
+
+    background: url(image_home.png);
+}

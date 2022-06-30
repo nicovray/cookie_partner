@@ -7,11 +7,13 @@ import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import Checkbox from "@mui/material/Checkbox";
 import ListItemText from "@mui/material/ListItemText";
+import imageideaplant from "../assets/image_idea_plant.png";
 import Swal from "sweetalert2";
 import "./Publish.css";
 
 export default function Publish() {
   const [name, setName] = useState("");
+  const [date, setDate] = useState("");
   const [categoryProject, setCategoryProject] = useState("");
   const [description, setDescription] = useState("");
   const [languages, setLanguages] = useState([]);
@@ -98,18 +100,15 @@ export default function Publish() {
   const handleSubmit = (e) => {
     e.preventDefault();
     Swal.fire({
-      title: 'Congratulations, your project is saved!',
-      width: 600,
-      padding: '3em',
-      color: '#716add',
-      background: '#fff url(/images/trees.png)',
+      title: "Congratulations, your project is saved!",
+      width: 400,
+      padding: "2rem",
+      color: "#041678",
+      background: "#ffff",
       backdrop: `
-        rgba(0,0,123,0.4)
-        url("/images/nyan-cat.gif")
-        left top
-        no-repeat
-      `
-    })
+        "#041678"
+      `,
+    });
   };
   return (
     <div>
@@ -127,6 +126,18 @@ export default function Publish() {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+
+          <label className="project_label" htmlFor="date">
+            {`Project's end date`}
+            <input
+              className="project_input"
+              id="date"
+              name="date"
+              type="text"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
             />
           </label>
 
@@ -161,7 +172,7 @@ export default function Publish() {
             Languages used
             <InputLabel className="project-input" />
             <Select
-              labelId="dproject-input"
+              labelId="project-input"
               id="project-input"
               multiple
               value={languages}
@@ -240,6 +251,9 @@ export default function Publish() {
           <button className="button" type="submit">
             Add your project
           </button>
+          <div className="div-image-idea-plant">
+            <img className="image-idea-plant" src={imageideaplant} alt="" />
+          </div>
         </form>
       </div>
     </div>
