@@ -840,6 +840,7 @@ export default function Animation() {
     );
 
   // MASTER
+  // eslint-disable-next-line no-unused-vars
   const master1 = gsap
     .timeline({
       repeat: -1,
