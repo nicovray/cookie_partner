@@ -13,7 +13,7 @@ import "./Navigation.css";
 export default function Navigation() {
   return (
     <div className="navbar">
-      <Link to="/">
+      <Link to="/home">
         <div className="logo">
           <img src={logo} className="logo" alt="logo" />
         </div>
