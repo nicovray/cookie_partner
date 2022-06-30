@@ -3,6 +3,8 @@
 import Navigation from "@components/Navigation";
 import React, { useEffect } from "react";
 import { Widget, addResponseMessage } from "react-chat-widget";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Doughnut } from "react-chartjs-2";
 import persona1 from "@assets/persona1.jpg";
 import persona5 from "@assets/persona5.jpg";
 import persona2 from "@assets/persona2.jpg";
@@ -13,9 +15,31 @@ import projet2 from "@assets/visuelProjet2.jpg";
 import projet3 from "@assets/visuelProjet3.jpg";
 import projet4 from "@assets/visuelProjet4.jpg";
 
-// import "./profile.css";
+import "./profile.css";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function Profile() {
+  const data = {
+    labels: ["Tasks to do", "Tasks done", "Current tasks"],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [30, 40, 20],
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(255, 206, 86, 0.2)",
+        ],
+        borderColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
   useEffect(() => {
     addResponseMessage("We can meet on the 15th maybe...");
   }, []);
@@ -30,12 +54,12 @@ export default function Profile() {
       <div className="profile">
         <img className="userprofile" src={persona1} alt="profile account" />
         <p>Jessica PARKER</p>
-        <p>Nantes</p>
+        <p>Nantes Agency</p>
         <p>Web developer</p>
         <h2>Projects in which I am involved</h2>
         <div className="supercard">
           <div className="cardproject">
-            <a href="t" className="card">
+            <a href="t" className="profilecard">
               <img src={projet1} className="card__image" alt="" />
               <div className="card__overlay1">
                 <div className="card__header1">
@@ -58,7 +82,7 @@ export default function Profile() {
               </div>
             </a>
             <div>
-              <a href="t" className="card">
+              <a href="t" className="profilecard">
                 <img src={projet2} className="card__image" alt="" />
                 <div className="card__overlay">
                   <div className="card__header">
@@ -86,7 +110,7 @@ export default function Profile() {
         <h2>Projects i have completed</h2>
         <div className="projetdone">
           <div>
-            <a href="t" className="card">
+            <a href="t" className="profilecard">
               <img src={projet3} className="card__image" alt="" />
               <div className="card__overlay">
                 <div className="card__header">
@@ -107,7 +131,7 @@ export default function Profile() {
             </a>
           </div>
           <div>
-            <a href="t" className="card">
+            <a href="t" className="profilecard">
               <img src={projet4} className="card__image" alt="" />
               <div className="card__overlay">
                 <div className="card__header">
@@ -132,7 +156,7 @@ export default function Profile() {
             </a>
           </div>
           <div>
-            <a href="t" className="card">
+            <a href="t" className="profilecard">
               <img src={projet1} className="card__image" alt="" />
               <div className="card__overlay1">
                 <div className="card__header1">
@@ -156,7 +180,7 @@ export default function Profile() {
             </a>
           </div>
           <div>
-            <a href="t" className="card">
+            <a href="t" className="profilecard">
               <img src={projet4} className="card__image" alt="" />
               <div className="card__overlay">
                 <div className="card__header">
@@ -179,9 +203,14 @@ export default function Profile() {
         </div>
         <div className="taches">
           <h3>My tasks</h3>
-          <p>- Define the application architecture</p>
-          <p>- Making prototypes and wireframe</p>
-          <p>- Perform tests on prototypes</p>
+          <div width="200px">
+            <Doughnut
+              data={data}
+              height="250px"
+              width="250px"
+              options={{ maintainAspectRatio: false }}
+            />
+          </div>
         </div>
         <Widget
           handleNewUserMessage={handleNewUserMessage}

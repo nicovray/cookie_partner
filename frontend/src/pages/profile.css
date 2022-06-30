@@ -65,11 +65,11 @@ h3 {
   gap: 50px;
 }
 
-.card {
+.profilecard {
   position: relative;
   display: block;
-  height: 400px;
-  width: 400px;
+  height: 20rem;
+  width: 20rem;
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
@@ -252,4 +252,8 @@ h3 {
   overflow: hidden;
   text-align: justify;
   font-size: 0.5em;
+}
+
+canvas.doughnut {
+  width: 10rem;
 }
