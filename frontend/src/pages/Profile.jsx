@@ -1,4 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable no-restricted-syntax */
 import Navigation from "@components/Navigation";
+
 import persona1 from "@assets/persona1.jpg";
 import persona5 from "@assets/persona5.jpg";
 import persona2 from "@assets/persona2.jpg";
@@ -12,6 +15,14 @@ import projet4 from "@assets/visuelProjet4.jpg";
 import "./profile.css";
 
 export default function Profile() {
+  useEffect(() => {
+    addResponseMessage("We can meet on the 15th maybe...");
+  }, []);
+
+  const handleNewUserMessage = (newMessage) => {
+    console.log(`New message incoming! ${newMessage}`);
+    // Now send the message throught the backend API
+  };
   return (
     <div>
       <Navigation />
@@ -20,7 +31,7 @@ export default function Profile() {
         <p>Jessica PARKER</p>
         <p>Nantes</p>
         <p>Web developer</p>
-        <h2>Projects in which I am involve</h2>
+        <h2>Projects in which I am involved</h2>
         <div className="supercard">
           <div className="cardproject">
             <a href="t" className="card">
@@ -166,11 +177,17 @@ export default function Profile() {
           </div>
         </div>
         <div className="taches">
-          <h3>Mes tâches</h3>
+          <h3>My tasks</h3>
           <p>- Define the application architecture</p>
           <p>- Making prototypes and wireframe</p>
           <p>- Perform tests on prototypes</p>
         </div>
+         <Widget
+        handleNewUserMessage={handleNewUserMessage}
+        profileAvatar={persona1}
+        title="My chat with Jessica"
+        subtitle="What's up?"
+      />
       </div>
     </div>
   );
