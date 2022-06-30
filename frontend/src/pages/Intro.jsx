@@ -37,7 +37,7 @@ function Intro() {
         className="button-getstarted"
         onClick={() => navigate("../authentification", { replace: true })}
       >
-        Get Started
+        GET STARTED
       </button>
       </div>
       <div>
