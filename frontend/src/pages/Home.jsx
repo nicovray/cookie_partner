@@ -4,6 +4,7 @@
 import React, { useEffect } from "react";
 import LittleCard from "@components/LittleCard";
 import Navigation from "@components/Navigation";
+import ScrollToTop from "@components/ScrollToTop";
 import { Widget, addResponseMessage } from "react-chat-widget";
 import "./Home.css";
 import imagehome from "../assets/image_home.png";
@@ -26,6 +27,7 @@ export default function Home() {
       <div>
         <Navigation />
         <LittleCard />
+        <ScrollToTop />
       </div>
       <div className="div-image-home">
         <img className="image-home" src={imagehome} alt="" />
