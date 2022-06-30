@@ -11,8 +11,11 @@ import persona3 from "@assets/persona3.jpg";
 import persona4 from "@assets/persona4.jpg";
 import persona5 from "@assets/persona5.jpg";
 import star from "@assets/star-pleine.png";
-// import starVide from "@assets/star-vide.png";
-import nostar from "@assets/nostar.png";
+import starvide from "@assets/star-vide.png";
+import avancement1 from "@assets/avancement.png";
+import avancement2 from "@assets/avancement2.png";
+import avancement3 from "@assets/avancement3.png";
+import avancement4 from "@assets/avancement4.png";
 
 export default function Test() {
   const [starButton1, setStarButton1] = useState(false);
@@ -56,15 +59,16 @@ export default function Test() {
       <li>
         <a href="t" className="card">
           <img src={projet1} className="card__image" alt="" />
+          <input
+            type="image"
+            alt=""
+            src={starButton1 ? star : starvide}
+            onClick={handleClick1}
+            className="star"
+          />
           <div className="card__overlay1">
             <div className="card__header1">
-              <input
-                type="image"
-                alt=""
-                src={starButton1 ? star : nostar}
-                onClick={handleClick1}
-                className="star"
-              />
+              <img alt="" className="projectAvancement" src={avancement1} />
               <svg className="card__arc1" xmlns="http://www.w3.org/2000/svg">
                 <path />
               </svg>
@@ -84,15 +88,16 @@ export default function Test() {
       <li>
         <a href="t" className="card">
           <img src={projet2} className="card__image" alt="" />
+          <input
+            type="image"
+            alt=""
+            src={starButton2 ? star : starvide}
+            onClick={handleClick2}
+            className="star"
+          />
           <div className="card__overlay">
             <div className="card__header">
-              <input
-                type="image"
-                alt=""
-                src={starButton2 ? star : nostar}
-                onClick={handleClick2}
-                className="star"
-              />
+              <img alt="" className="projectAvancement" src={avancement3} />
               <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
                 <path />
               </svg>
@@ -112,15 +117,16 @@ export default function Test() {
       <li>
         <a href="t" className="card">
           <img src={projet3} className="card__image" alt="" />
+          <input
+            type="image"
+            alt=""
+            src={starButton3 ? star : starvide}
+            onClick={handleClick3}
+            className="star"
+          />
           <div className="card__overlay">
             <div className="card__header">
-              <input
-                type="image"
-                alt=""
-                src={starButton3 ? star : nostar}
-                onClick={handleClick3}
-                className="star"
-              />
+              <img alt="" className="projectAvancement4" src={avancement4} />
               <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
                 <path />
               </svg>
@@ -144,15 +150,16 @@ export default function Test() {
       <li>
         <a href="t" className="card">
           <img src={projet4} className="card__image" alt="" />
+          <input
+            type="image"
+            alt=""
+            src={starButton4 ? star : starvide}
+            onClick={handleClick4}
+            className="star"
+          />
           <div className="card__overlay">
             <div className="card__header">
-              <input
-                type="image"
-                alt=""
-                src={starButton4 ? star : nostar}
-                onClick={handleClick4}
-                className="star"
-              />
+              <img alt="" className="projectAvancement" src={avancement3} />
               <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
                 <path />
               </svg>
@@ -176,15 +183,16 @@ export default function Test() {
       <li>
         <a href="t" className="card">
           <img src={projet1} className="card__image" alt="" />
+          <input
+            type="image"
+            alt=""
+            src={starButton5 ? star : starvide}
+            onClick={handleClick5}
+            className="star"
+          />
           <div className="card__overlay1">
             <div className="card__header1">
-              <input
-                type="image"
-                alt=""
-                src={starButton5 ? star : nostar}
-                onClick={handleClick5}
-                className="star"
-              />
+              <img alt="" className="projectAvancement" src={avancement1} />
               <svg className="card__arc1" xmlns="http://www.w3.org/2000/svg">
                 <path />
               </svg>
@@ -204,15 +212,16 @@ export default function Test() {
       <li>
         <a href="t" className="card">
           <img src={projet4} className="card__image" alt="" />
+          <input
+            type="image"
+            alt=""
+            src={starButton6 ? star : starvide}
+            onClick={handleClick6}
+            className="star"
+          />
           <div className="card__overlay">
             <div className="card__header">
-              <input
-                type="image"
-                alt=""
-                src={starButton6 ? star : nostar}
-                onClick={handleClick6}
-                className="star"
-              />
+              <img alt="" className="projectAvancement" src={avancement2} />
               <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
                 <path />
               </svg>
@@ -232,15 +241,16 @@ export default function Test() {
       <li>
         <a href="t" className="card">
           <img src={projet3} className="card__image" alt="" />
+          <input
+            type="image"
+            alt=""
+            src={starButton7 ? star : starvide}
+            onClick={handleClick7}
+            className="star"
+          />
           <div className="card__overlay">
             <div className="card__header">
-              <input
-                type="image"
-                alt=""
-                src={starButton7 ? star : nostar}
-                onClick={handleClick7}
-                className="star"
-              />
+              <img alt="" className="projectAvancement" src={avancement1} />
               <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
                 <path />
               </svg>

@@ -7,6 +7,7 @@ import "./App.css";
 import Authentification from "@pages/Authentification";
 import Login from "@pages/Login";
 import Registration from "@pages/Registration";
+import CardDetail from "@pages/CardDetail";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/registration" element={<Registration />} />
           <Route exact path="/home" element={<Home />} />
           <Route path="/myaccount" element={<Profile />} />
+          <Route path="/projectDetail" element={<CardDetail />} />
         </Routes>
       </Router>
     </div>
