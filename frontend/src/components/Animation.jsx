@@ -851,8 +851,8 @@ export default function Animation() {
     .add(f1, "m+=0.4")
     .add(f2, "m+=0.6")
     .add(f3, "m+=0.75")
-    .add(f4, "m+=0.97") // issho
-    .add(f5, "m+=1") // issho
+    .add(f4, "m+=0.97")
+    .add(f5, "m+=1")
     .add(f6, "m+=1.14")
     .add(f7, "m+=1.36")
     .add(f8, "m+=1.6")
@@ -873,9 +873,9 @@ export default function Animation() {
 
   return (
     <div ref={svg} className="box">
-      <svg id="mysvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+      <svg id="mysvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
         <g id="bg">
-          <path fill="#fff4e9" d="M0 0h800v600H0z" />
+          <path fill="#ffff" d="M0 0h800v600H0z" />
         </g>
         <g
           id="letter"
