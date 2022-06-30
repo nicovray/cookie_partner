@@ -6,29 +6,27 @@
   top: 2rem;
 }
 .image-intro {
-  width: 100vw;
+  width: 75vw;
+  height: 60vw;
 }
 .title-intro {
   position: absolute;
   width: 401px;
   height: 104px;
-  left: 124px;
+  left: 3rem;
   top: 50px;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
-
   color: #ffffff;
 }
 .explications-intro {
   position: absolute;
   width: 297px;
   height: 237px;
-  left: 127px;
+  left: 3rem;
   top: 250px;
-
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -43,25 +41,42 @@
   left: 120px;
   top: 700px;
 
-  color: #ffffff;
-  font-size: 1rem;
-  border: none;
-  background: #3e69d1;
-  border-radius: 5rem;
-}
-
-.button-getstarted {
-
-}
-
-.plant-icon{
+  }
+  .explications-intro {
 	position: absolute;
-	top: 525px;
-	left: 1350px;
-	width: 25rem;
+	width: 297px;
+	height: 237px;
+	left: 2rem;
+	top: 250px;
+  font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2rem;
+  	color: #000000;
+  }
+
+.plant-icon {
+  position: absolute;
+  top: 20rem;
+  left: 65rem;
+  width: 20rem;
 }
 
-.explications-intro{
-	line-height: 2.5rem;
-	font-size: 2rem;
-}
+  .button-getstarted {
+	position: absolute;
+	width: 204px;
+	height: 64px;
+	left: 120px;
+	top: 700px;
+  	color: #ffffff;
+	font-size: 1rem;
+	border: none;
+	background: #3e69d1;
+	border-radius: 5rem;
+  }
+
+.button-getstarted:hover {
+	background-color: #041678;
+	}
+
+
