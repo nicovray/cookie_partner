@@ -1,15 +1,15 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import "./CardDetail.css";
+import "./CardDetailIdea.css";
 import Navigation from "@components/Navigation";
 // import babelckgroundIllu1 from "../assets/backgroundIllu.png";
-// import avancement1 from "../assets/avancement.png";
-// import avancement2 from "../assets/avancement2.png";
 import Swal from "sweetalert2";
-import avancement3 from "../assets/avancement3.png";
+import avancement1 from "../assets/avancement.png";
+// import avancement2 from "../assets/avancement2.png";
+// import avancement3 from "../assets/avancement3.png";
 // import avancement4 from "../assets/avancement4.png";
-import avancementGrey1 from "../assets/avancementGrey1.png";
+// import avancementGrey1 from "../assets/avancementGrey1.png";
 import avancementGrey2 from "../assets/avancementGrey2.png";
-// import avancementGrey3 from "../assets/avancementGrey3.png";
+import avancementGrey3 from "../assets/avancementGrey3.png";
 import avancementGrey4 from "../assets/avancementGrey4.png";
 import javaLogo from "../assets/javaLogo.jpg";
 import gcpLogo from "../assets/gcpLogo.png";
@@ -44,12 +44,12 @@ export default function CardDetail() {
     <div>
       <Navigation />
       <div className="ContainerGlobalePage">
-        <div className="projectCardContainer">
+        <div className="projectCardContainer1">
           <div className="whiteBackground">
             <div className="plantsContainer">
-              <img alt="" className="avancementPlants" src={avancementGrey1} />
+              <img alt="" className="avancementPlants" src={avancement1} />
               <img alt="" className="avancementPlants" src={avancementGrey2} />
-              <img alt="" className="avancementPlants" src={avancement3} />
+              <img alt="" className="avancementPlants" src={avancementGrey3} />
               <img alt="" className="avancementPlants" src={avancementGrey4} />
             </div>
             <div className="detailContainer">

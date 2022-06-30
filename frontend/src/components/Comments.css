@@ -1,0 +1,25 @@
+.Avatar {
+  /* width: 10%;
+    opacity: 0.5;
+    border-radius: 50% 50%;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    border: 5px  */
+}
+.commentsComponentContainer {
+  width: 400px;
+  border-radius: 22% 78% 100% 0% / 30% 15% 85% 70%;
+  background-color: rgba(253, 75, 107, 0.5);
+}
+
+.interieurComment {
+  margin-left: 30px;
+}
+
+.avatarContainer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.replyContainer {
+  padding-top: 1.5rem;
+}
