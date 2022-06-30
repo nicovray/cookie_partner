@@ -1,13 +1,17 @@
-/* .home-accueil {
-  width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+
+.home-accueil {
+  width: 100vw;
   height: 100vh;
-  min-height: 930px;
+  min-height: 600px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.bloc-accueil {
-  width: 1000px;
+/* .bloc-accueil {
+  width: 90%;
   height: 90%;
   background: rgb(204, 203, 203);
   flex-shrink: 0;
@@ -19,11 +23,10 @@
 } */
 
 .bloc-accueil h1 {
-  font-size: 100px;
+  font-size: 4rem;
+  font-family: 'Send Flowers', cursive;
   line-height: 1;
-  margin-bottom: 20px;
 }
-
 .bloc-accueil h1 span {
   display: inline-block;
   opacity: 0;
@@ -32,9 +35,13 @@
 .bloc-accueil h1 > span:nth-child(1){
   animation: apparition 3s 0.4s ease-out forwards;
 }
-
 .bloc-accueil h1 > span:nth-child(2){
   animation: apparition 3s 0.8s ease-out forwards;
+}
+
+.your-projects{
+  position: absolute;
+  right: 40px;
 }
 
 @keyframes apparition {

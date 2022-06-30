@@ -873,7 +873,7 @@ export default function Animation() {
 
   return (
     <div ref={svg} className="box">
-      <svg id="mysvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+      <svg  id="mysvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
         <g id="bg">
           <path fill="#ffff" d="M0 0h800v600H0z" />
         </g>

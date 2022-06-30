@@ -1,4 +1,5 @@
-import Animation from "../components/Animation";
+// import ReactPlayer from "react-player";
+import bloom from "../assets/bloom.mp4";
 import "./Accueil.css";
 
 export default function Accueil() {
@@ -8,12 +9,14 @@ export default function Accueil() {
   return (
     <div className="home-accueil">
       <div className="bloc-accueil">
-        <h1>
-          <span>LET</span>
+        <h1 className="let">
+          <span>Let</span>
         </h1>
-        <Animation />
-        <h1>
-          <span>YOUR PROJECTS !</span>
+        <div>
+          <video height="650" title="" autoPlay loop muted src={bloom} />
+        </div>
+        <h1 className="your-projects">
+          <span>Your Projects !</span>
         </h1>
       </div>
     </div>
