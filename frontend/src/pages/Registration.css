@@ -1,7 +1,7 @@
 .registration-container {
   background-color: #3e69d1;
   width: 100vw;
-  height: 1024px;
+  height: 100vh;
 }
 
 .title-registration {
@@ -9,7 +9,7 @@
   width: 1440px;
   height: 130px;
   left: 0px;
-  top: 244px;
+  top: 20vh;
 
   font-family: "Inter";
   font-style: normal;
@@ -26,7 +26,7 @@
   width: 620px;
   height: 106px;
   left: 410px;
-  top: 338px;
+  top: 30vh;
   border: none;
   background: #ffffff;
   border-radius: 70px;
@@ -41,7 +41,7 @@
   width: 620px;
   height: 106px;
   left: 410px;
-  top: 490px;
+  top: 45vh;
   border: none;
   background: #ffffff;
   border-radius: 70px;
@@ -56,7 +56,7 @@
   width: 620px;
   height: 106px;
   left: 410px;
-  top: 642px;
+  top: 60vh;
   border: none;
   background: #ffffff;
   border-radius: 70px;
@@ -71,7 +71,7 @@
   width: 284px;
   height: 92px;
   left: 578px;
-  top: 796px;
+  top: 80vh;
   background: #041678;
   border-radius: 46px;
   border: none;

@@ -1,7 +1,7 @@
 .login-container {
   background-color: #5ec9af;
   width: 100vw;
-  height: 1024px;
+  height: 100vh;
 }
 
 .title-login {
@@ -62,7 +62,7 @@
   width: 284px;
   height: 92px;
   left: 578px;
-  top: 796px;
+  top: 80vh;
   background: #3e69d1;
   border-radius: 46px;
   border: none;
