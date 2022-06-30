@@ -1,74 +1,64 @@
-.logo {
-    width: 20rem;
-    position: absolute;
-    width: 349px;
-    height: 100px;
-    left: 1064px;
-    top: 27px;
-}
-.image-intro {
-    position: absolute;
-    width: 1305px;
-    height: 1029px;
-    left: 0px;
-}
-.title-intro {
-    position: absolute;
-    width: 401px;
-    height: 104px;
-    left: 124px;
-    top: 397px;
+.logointro {
+	width: 20rem;
+	position: absolute;
+	width: 25%;
+	left: 58rem;
+	top: 2rem;
+  }
+  .image-intro {
+	width: 100vw;
+  }
+  .title-intro {
+	position: absolute;
+	width: 401px;
+	height: 104px;
+	left: 124px;
+	top: 50px;
+  	font-family: "Inter";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 2rem;
+  	color: #ffffff;
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
+  }
+  .explications-intro {
+	position: absolute;
+	width: 297px;
+	height: 237px;
+	left: 127px;
+	top: 250px;
+  	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.2rem;
+  	color: #000000;
+  }
 
-    color: #FFFFFF;
-}
-.explications-intro {
-    position: absolute;
-    width: 297px;
-    height: 237px;
-    left: 127px;
-    top: 458px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #000000;
-}
-
-.button-getstarted {
-    position: absolute;
-    width: 204px;
-    height: 64px;
-    left: 120px;
-    top: 631px;
-    color: #ffffff;
-    font-size: 1rem;
-    border: none;
-    background: #3E69D1;
-    border-radius: 35px;
-}
+  .button-getstarted {
+	position: absolute;
+	width: 204px;
+	height: 64px;
+	left: 120px;
+	top: 700px;
+  	color: #ffffff;
+	font-size: 1rem;
+	border: none;
+	background: #3e69d1;
+	border-radius: 5rem;
+  }
 
 .button-getstarted:hover {
-	background-color: #3E69D1;
+	background-color: #041678;
 	}
 
-
 .plant-icon{
-	position: absolute;
-	top: 525px;
-	left: 1350px;
-	width: 25rem;
+    position: absolute;
+    top: 525px;
+    left: 1350px;
+    width: 25rem;
 }
 
 .explications-intro{
-	line-height: 2.5rem;
-	font-size: 2rem;
+    line-height: 2.5rem;
+    font-size: 2rem;
 }

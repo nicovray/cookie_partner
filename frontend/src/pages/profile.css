@@ -1,0 +1,259 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 79% 21% 76% 24% / 42% 71% 29% 58%;
+  background-color: rgba(253, 75, 107, 0.5);
+}
+
+.userprofile {
+  width: 250px;
+  height: 250px;
+  border-radius: 25%;
+  margin-top: 50px;
+}
+
+.taches {
+  border-radius: 33% 67% 70% 30% / 30% 54% 46% 70%;
+  background-color: rgba(62, 105, 209, 0.8);
+  height: 500px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.projetdone {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.supercard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 1200px;
+  background-color: rgba(54, 188, 155, 0.7);
+  border-radius: 22% 78% 40% 60% / 35% 46% 54% 65%;
+}
+
+h2 {
+  padding: 30px;
+  font-size: 1.8rem;
+}
+
+h3 {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-size: 1.8rem;
+}
+
+.taches p {
+  padding: 20px;
+  font-size: 1.6rem;
+}
+
+.profile p {
+  padding: 20px;
+  font-size: 1.6rem;
+}
+
+.cardproject {
+  display: flex;
+  gap: 50px;
+}
+
+.profilecard {
+  position: relative;
+  display: block;
+  height: 20rem;
+  width: 20rem;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+  border: solid 2px rgba(158, 222, 206, 0.9);
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  transform: translateY(100%);
+  transition: 0.2s ease-in-out;
+
+  background-color: #36bc9b;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 9px;
+  top: 8px;
+}
+
+.card__header1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+
+  background-color: #fd4b6b;
+}
+
+.card__arc1 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card:hover .card__header1 {
+  transform: translateY(0);
+}
+
+.card__overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  transform: translateY(100%);
+  transition: 0.2s ease-in-out;
+
+  background-color: #3e69d1;
+}
+
+.card:hover .card__overlay1 {
+  transform: translateY(0);
+}
+.card__header1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+
+  background-color: #3e69d1;
+}
+.card__arc1 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card__arc1 path {
+  fill: #3e69d1;
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card__header1 {
+  transform: translateY(0);
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+
+  background-color: #36bc9b;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: #36bc9b;
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 0.7em;
+  margin: 0 0 0.3em;
+  color: white;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";
+  font-size: 0.6em;
+  color: white;
+}
+
+.card__status {
+  font-size: 0.8em;
+  color: white;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 0.5em;
+}
+
+canvas.doughnut {
+  width: 10rem;
+}
