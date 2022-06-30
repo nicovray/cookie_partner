@@ -1,7 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-restricted-syntax */
 import Navigation from "@components/Navigation";
-
+import React, { useEffect } from "react";
+import { Widget, addResponseMessage } from "react-chat-widget";
 import persona1 from "@assets/persona1.jpg";
 import persona5 from "@assets/persona5.jpg";
 import persona2 from "@assets/persona2.jpg";
@@ -12,7 +13,7 @@ import projet2 from "@assets/visuelProjet2.jpg";
 import projet3 from "@assets/visuelProjet3.jpg";
 import projet4 from "@assets/visuelProjet4.jpg";
 
-import "./profile.css";
+// import "./profile.css";
 
 export default function Profile() {
   useEffect(() => {
@@ -182,12 +183,12 @@ export default function Profile() {
           <p>- Making prototypes and wireframe</p>
           <p>- Perform tests on prototypes</p>
         </div>
-         <Widget
-        handleNewUserMessage={handleNewUserMessage}
-        profileAvatar={persona1}
-        title="My chat with Jessica"
-        subtitle="What's up?"
-      />
+        <Widget
+          handleNewUserMessage={handleNewUserMessage}
+          profileAvatar={persona1}
+          title="My chat with Jessica"
+          subtitle="What's up?"
+        />
       </div>
     </div>
   );
