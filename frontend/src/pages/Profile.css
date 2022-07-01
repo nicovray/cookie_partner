@@ -1,5 +1,5 @@
 .bloc-color-profile2 {
-  background-color: #9EDECE;
+  background-color: #9edece;
   border-radius: 50px;
   width: 95vw;
   height: 70vw;
@@ -9,12 +9,13 @@
 }
 
 .div-align-bloc-profile {
-  border-radius: 24% 76% 33% 67% / 62% 11% 89% 38% ;
+  border-radius: 24% 76% 33% 67% / 62% 11% 89% 38%;
   width: 400px;
   height: 200px;
   background-color: rgba(253, 75, 107, 0.5);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .image-profile {
   width: 10rem;
@@ -48,7 +49,7 @@ h2 {
   border-radius: 2rem;
   width: 16rem;
   height: 37rem;
-  color: #36BC9B;
+  color: #36bc9b;
   padding: 1rem;
 }
 
@@ -68,6 +69,35 @@ h2 {
 }
 
 .progression {
-  margin-top: 2rem;;
+  margin-top: 2rem;
   width: 14rem;
+}
+
+.collaborateProject {
+  border-radius: 53% 47% 17% 83% / 30% 27% 73% 70%;
+  height: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  margin-top: 15px;
+  margin-left: 250px;
+  margin-right: 100px;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  background-color: #36bc9b;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  font-size: 1em;
+}
+
+.collaborateProject:hover {
+  background-color: #3e69d1; /* Green */
+  color: white;
+}
+
+.texte-profile {
+  color: white;
 }
