@@ -1,7 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
 import "./Profile.css";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Swal from "sweetalert2";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Doughnut } from "react-chartjs-2";
 import Navigation from "../components/Navigation";
 import persona1 from "../assets/persona1.jpg";
 import progression from "../assets/progression.png";
@@ -10,7 +12,29 @@ import vignette2 from "../assets/vignette2.png";
 import vignette3 from "../assets/vignette3.png";
 import vignette4 from "../assets/vignette4.png";
 
+ChartJS.register(ArcElement, Tooltip, Legend);
+
 function Profile2() {
+  const data = {
+    labels: ["Java", "Python", "Javascript"],
+    datasets: [
+      {
+        label: "My skills",
+        data: [30, 40, 20],
+        backgroundColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+        ],
+        borderColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     Swal.fire({
@@ -41,9 +65,19 @@ function Profile2() {
             <h2 className="job-profile2">Web Developer</h2>
             <h2 className="agency-profile2">Nantes Agency</h2>
           </div>
-          <button type="button" className="joinProject" onClick={handleSubmit}>
+          <button
+            type="button"
+            className="collaborateProject"
+            onClick={handleSubmit}
+          >
             COLLABORATE
           </button>
+          <Doughnut
+            data={data}
+            height="250px"
+            width="250px"
+            options={{ maintainAspectRatio: false }}
+          />
         </div>
         <div className="bloc-profile-white">
           <div className="taches-profile">
