@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+
+.ContainerGlobalePage {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+}
+.projectCardContainer1 {
+  /* background: rgba(14, 228, 174, 0.3); */
+  background-color: rgba(62, 105, 209, 0.3);
+  border-radius: 30% 70% 70% 30% / 30% 27% 73% 70%;
+  /* position: absolute; */
+  width: 100%;
+  height: 1200px;
+  left: 107px;
+  top: 204px;
+  display: flex;
+  justify-content: center;
+}
+
+.whiteBackground {
+  /* background-color: rgba(255, 255, 255, 0.6); */
+  background-color: white;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: auto;
+  /* box-shadow: 0px 6px 6px rgba(145, 143, 143, 0.6); */
+  border-radius: 10px;
+  /* margin-left: 2em; */
+
+  /* 
+  border-radius: 12% 13% 42% 20% / 12% 13% 42% 20%; */
+
+  /* border-radius:30% 70% 70% 30% / 30% 27% 73% 70% ; */
+  /* border-radius: 53% 47% 71% 29% / 30% 27% 73% 70% ; */
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.plantsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: center;
+  /* background-color: rgb(62, 105, 209, 0.6); */
+  background-color: rgb(232, 232, 232);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 25em;
+  padding-top: 2em;
+  position: absolute;
+  left: 100px;
+  top: 150px;
+  /* border-radius: 30% 70% 70% 30% / 30% 27% 73% 70%; */
+  border-radius: 10px;
+  width: 6em;
+}
+
+.avancementPlants {
+  width: 50px;
+  margin: 10px;
+}
+
+.projectName {
+  /* padding-left: 1em; */
+  font-family: "Lalezar", cursive;
+  font-size: 2.5em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #041678;
+}
+
+.projectCreator {
+  font-family: "Comfortaa", cursive;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  color: #041678;
+  padding-left: 10px;
+}
+
+.memberPhotoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.memberPhoto {
+  width: 10%;
+  /* opacity: 0.5; */
+  border-radius: 50% 50%;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.detailContainer {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.projectTechno {
+  display: flex;
+}
+
+.javaLogo {
+  width: 40px;
+  margin: 20px;
+}
+
+.angularLogo {
+  width: 50px;
+  margin: 20px;
+}
+
+.gcpLogo {
+  width: 50px;
+  margin: 25px;
+}
+
+.memberSpan1 {
+  font-weight: bold;
+  color: #5ec9af;
+}
+.projectMembers {
+  margin-bottom: 1em;
+  color: #5ec9af;
+  font-size: 1, 5em;
+}
+.memberSpan {
+  font-weight: bold;
+  color: #5ec9af;
+  font-size: 1, 5em;
+}
+
+.projectTechno {
+  margin-top: 15px;
+  color: #5ec9af;
+  font-size: 1, 5em;
+  /* background-color: #3e69d1;
+  width: 50%;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  padding-left: 20px; */
+}
+
+.projectRessource {
+  margin-bottom: 20px;
+}
+
+.illuContainerBackground {
+  /* display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; */
+}
+
+.backgroundIllu1 {
+  width: 20vw;
+}
+
+.projectComments {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.projectHashtags {
+  margin-bottom: 20px;
+}
+
+.joinProject {
+  border-radius: 53% 47% 17% 83% / 30% 27% 73% 70%;
+  height: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  margin-top: 15px;
+  margin-left: 30px;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  background-color: #36bc9b;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  font-size: 1em;
+}
+
+.joinProject:hover {
+  background-color: #3e69d1; /* Green */
+  color: white;
+}
+
+.projectHashtags {
+  font-weight: bold;
+  color: #041678;
+}
+
+.projectDescription,
+.projectRessource,
+.projectMembers,
+.projectComments {
+  width: 37rem;
+}
+
+.photoProfil {
+  width: 10%;
+  /* opacity: 0.5; */
+  border-radius: 50% 50%;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.memberProfil1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 1em;
+  color: #3e69d1;
+}
+
+.commentsContainer {
+  width: 90vw;
+  padding-top: 50px;
+}
+
+.buttonComment {
+  border-radius: 53% 47% 17% 83% / 30% 27% 73% 70%;
+  height: 40px;
+  width: 14em;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  margin-top: 15px;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  background-color: #36bc9b;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  font-size: 1em;
+  color: white;
+}
+
+.buttonComment:hover {
+  background-color: #3e69d1;
+  color: white;
+}
+
+.leftContainer {
+  width: 500px;
+  text-align: justify;
+}
