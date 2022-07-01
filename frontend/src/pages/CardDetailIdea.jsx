@@ -3,6 +3,7 @@ import "./CardDetailIdea.css";
 import Navigation from "@components/Navigation";
 // import babelckgroundIllu1 from "../assets/backgroundIllu.png";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 import avancement1 from "../assets/avancement.png";
 // import avancement2 from "../assets/avancement2.png";
 // import avancement3 from "../assets/avancement3.png";
@@ -46,14 +47,26 @@ export default function CardDetail() {
       <div className="ContainerGlobalePage">
         <div className="projectCardContainer1">
           <div className="whiteBackground">
-            <div className="plantsContainer">
-              <img alt="" className="avancementPlants" src={avancement1} />
-              <img alt="" className="avancementPlants" src={avancementGrey2} />
-              <img alt="" className="avancementPlants" src={avancementGrey3} />
-              <img alt="" className="avancementPlants" src={avancementGrey4} />
-            </div>
             <div className="detailContainer">
               <h1 className="projectName">I HAVE A GREEN</h1>
+              <div className="plantsContainer">
+                <img alt="" className="avancementPlants" src={avancement1} />
+                <img
+                  alt=""
+                  className="avancementPlants"
+                  src={avancementGrey2}
+                />
+                <img
+                  alt=""
+                  className="avancementPlants"
+                  src={avancementGrey3}
+                />
+                <img
+                  alt=""
+                  className="avancementPlants"
+                  src={avancementGrey4}
+                />
+              </div>
               <div className="leftContainer">
                 <div className="memberPhotoContainer">
                   <img src={persona4} alt="" className="memberPhoto" />
@@ -86,10 +99,13 @@ export default function CardDetail() {
                   <span className="memberSpan1">Members</span>
                 </p>
                 <div className="membersProfils">
-                  <div className="memberProfil1">
-                    <img src={persona1} alt="" className="photoProfil" />
-                    <h5>Mary Lybon | Munich Agency</h5>
-                  </div>
+                  <Link to="/myaccount">
+                    <div className="memberProfil1">
+                      <img src={persona1} alt="" className="photoProfil" />
+
+                      <h5>Jessica Parker | Nantes Agency</h5>
+                    </div>
+                  </Link>
                   <div className="memberProfil1">
                     <img src={persona3} alt="" className="photoProfil" />
                     <h5>Jean-Claude Biron | Lyon Agency</h5>
@@ -107,9 +123,9 @@ export default function CardDetail() {
                   <Progression />
                 </div>
 
-                <p className="projectHashtags">
-                  #megaProject #coconstruction #newProject
-                </p>
+                <p className="projectHashtags">#newProject</p>
+                <p className="projectHashtags">#coConstruction</p>
+                <p className="projectHashtags">#newIdea</p>
                 <button
                   type="button"
                   className="joinProject"

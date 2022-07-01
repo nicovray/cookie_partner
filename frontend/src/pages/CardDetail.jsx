@@ -5,6 +5,7 @@ import Navigation from "@components/Navigation";
 // import avancement1 from "../assets/avancement.png";
 // import avancement2 from "../assets/avancement2.png";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 import avancement3 from "../assets/avancement3.png";
 // import avancement4 from "../assets/avancement4.png";
 import avancementGrey1 from "../assets/avancementGrey1.png";
@@ -86,10 +87,13 @@ export default function CardDetail() {
                   <span className="memberSpan1">Members</span>
                 </p>
                 <div className="membersProfils">
-                  <div className="memberProfil1">
-                    <img src={persona1} alt="" className="photoProfil" />
-                    <h5>Mary Lybon | Munich Agency</h5>
-                  </div>
+                  <Link to="/myaccount">
+                    <div className="memberProfil1">
+                      <img src={persona1} alt="" className="photoProfil" />
+
+                      <h5>Jessica Parker | Nantes Agency</h5>
+                    </div>
+                  </Link>
                   <div className="memberProfil1">
                     <img src={persona3} alt="" className="photoProfil" />
                     <h5>Jean-Claude Biron | Lyon Agency</h5>

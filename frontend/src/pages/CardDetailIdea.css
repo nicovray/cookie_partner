@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
 
 .ContainerGlobalePage {
   font-family: "Raleway", sans-serif;
@@ -7,8 +8,6 @@
 .projectCardContainer1 {
   /* background: rgba(14, 228, 174, 0.3); */
   background-color: rgba(62, 105, 209, 0.3);
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-  /* border-radius: 50px; */
   border-radius: 30% 70% 70% 30% / 30% 27% 73% 70%;
   /* position: absolute; */
   width: 100%;
@@ -17,19 +16,19 @@
   top: 204px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.6); */
 }
 
 .whiteBackground {
-  background-color: rgba(255, 255, 255, 0.6);
+  /* background-color: rgba(255, 255, 255, 0.6); */
+  background-color: white;
+  margin-top: 2em;
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 70%;
   height: auto;
   /* box-shadow: 0px 6px 6px rgba(145, 143, 143, 0.6); */
   border-radius: 10px;
-  margin-left: 50px;
+  /* margin-left: 2em; */
 
   /* 
   border-radius: 12% 13% 42% 20% / 12% 13% 42% 20%; */
@@ -44,13 +43,17 @@
   flex-direction: column;
   align-items: space-around;
   justify-content: center;
-  /* margin-left: 20px; */
-  background-color: rgb(231, 231, 231);
+  /* background-color: rgb(62, 105, 209, 0.6); */
+  background-color: rgb(232, 232, 232);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 25em;
   padding-top: 2em;
   position: absolute;
-  left: 19px;
-  top: 350px;
+  left: 100px;
+  top: 150px;
+  /* border-radius: 30% 70% 70% 30% / 30% 27% 73% 70%; */
+  border-radius: 10px;
+  width: 6em;
 }
 
 .avancementPlants {
@@ -60,12 +63,12 @@
 
 .projectName {
   /* padding-left: 1em; */
-  font-family: "Raleway", sans-serif;
-  font-size: 1.6em;
+  font-family: "Lalezar", cursive;
+  font-size: 2.5em;
   margin-top: 30px;
   margin-bottom: 20px;
   font-weight: bold;
-  color: #5ec9af;
+  color: #041678;
 }
 
 .projectCreator {
@@ -172,7 +175,7 @@
   padding-bottom: 40px;
   padding-top: 20px;
   margin-top: 15px;
-  margin-left: 300px;
+  margin-left: 30px;
   text-align: center;
   border: none;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
@@ -224,6 +227,7 @@
 .buttonComment {
   border-radius: 53% 47% 17% 83% / 30% 27% 73% 70%;
   height: 40px;
+  width: 14em;
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 40px;

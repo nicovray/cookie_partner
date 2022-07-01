@@ -1,5 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./LittleCard.css";
 import projet1 from "@assets/visuelProjet1.jpg";
 import projet2 from "@assets/visuelProjet2.jpg";
@@ -57,7 +59,7 @@ export default function Test() {
   return (
     <ul className="cards">
       <li>
-        <a href="t" className="card">
+        <Link to="/projectDetailIdea" className="card">
           <img src={projet1} className="card__image" alt="" />
           <input
             type="image"
@@ -83,10 +85,10 @@ export default function Test() {
               Asperiores, blanditiis?
             </p>
           </div>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="t" className="card">
+        <Link to="/projectDetail" className="card">
           <img src={projet2} className="card__image" alt="" />
           <input
             type="image"
@@ -112,10 +114,10 @@ export default function Test() {
               Asperiores, blanditii sipselit ...
             </p>
           </div>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="t" className="card">
+        <Link to="/projectDetail" className="card">
           <img src={projet3} className="card__image" alt="" />
           <input
             type="image"
@@ -145,10 +147,10 @@ export default function Test() {
               Asperiores, blanditiis ...
             </p>
           </div>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="t" className="card">
+        <Link to="/projectDetail" className="card">
           <img src={projet4} className="card__image" alt="" />
           <input
             type="image"
@@ -178,10 +180,10 @@ export default function Test() {
               Asperiores, blanditiis ...
             </p>
           </div>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="t" className="card">
+        <Link to="/projectDetailIdea" className="card">
           <img src={projet1} className="card__image" alt="" />
           <input
             type="image"
@@ -207,10 +209,10 @@ export default function Test() {
               Asperiores, blanditiis?
             </p>
           </div>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="t" className="card">
+        <Link to="/projectDetail" className="card">
           <img src={projet4} className="card__image" alt="" />
           <input
             type="image"
@@ -236,10 +238,10 @@ export default function Test() {
               Asperiores, blanditiis ...
             </p>
           </div>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="t" className="card">
+        <Link to="/projectDetail" className="card">
           <img src={projet3} className="card__image" alt="" />
           <input
             type="image"
@@ -268,8 +270,102 @@ export default function Test() {
               Asperiores, blanditiis ...
             </p>
           </div>
-        </a>
+        </Link>
       </li>
+
+      <li>
+        <Link to="/projectDetail" className="card">
+          <img src={projet2} className="card__image" alt="" />
+          <input
+            type="image"
+            alt=""
+            src={starButton2 ? star : starvide}
+            onClick={handleClick2}
+            className="star"
+          />
+          <div className="card__overlay">
+            <div className="card__header">
+              <img alt="" className="projectAvancement" src={avancement3} />
+              <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+              <img className="card__thumb" src={persona5} alt="" />
+              <div className="card__header-text">
+                <h3 className="card__title">Project name</h3>
+                <span className="card__status">Anaïs Leroux</span>
+              </div>
+            </div>
+            <p className="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, blanditii sipselit ...
+            </p>
+          </div>
+        </Link>
+      </li>
+      <li>
+        <Link to="/projectDetail" className="card">
+          <img src={projet3} className="card__image" alt="" />
+          <input
+            type="image"
+            alt=""
+            src={starButton3 ? star : starvide}
+            onClick={handleClick3}
+            className="star"
+          />
+          <div className="card__overlay">
+            <div className="card__header">
+              <img alt="" className="projectAvancement4" src={avancement4} />
+              <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+              <img className="card__thumb" src={persona2} alt="" />
+              <div className="card__header-text">
+                <h3 className="card__title">Project name</h3>
+                {/* <span className="card__tagline">
+                  Lorem ipsum dolor sit amet
+                  consectetureeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                </span> */}
+                <span className="card__status">Johanna Prier</span>
+              </div>
+            </div>
+            <p className="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, blanditiis ...
+            </p>
+          </div>
+        </Link>
+      </li>
+
+      <li>
+        <Link to="/projectDetailIdea" className="card">
+          <img src={projet1} className="card__image" alt="" />
+          <input
+            type="image"
+            alt=""
+            src={starButton1 ? star : starvide}
+            onClick={handleClick1}
+            className="star"
+          />
+          <div className="card__overlay1">
+            <div className="card__header1">
+              <img alt="" className="projectAvancement" src={avancement1} />
+              <svg className="card__arc1" xmlns="http://www.w3.org/2000/svg">
+                <path />
+              </svg>
+              <img className="card__thumb" src={persona1} alt="" />
+              <div className="card__header-text">
+                <h3 className="card__title">Name of the idea</h3>
+                <span className="card__status">Jessica Parker</span>
+              </div>
+            </div>
+            <p className="card__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, blanditiis?
+            </p>
+          </div>
+        </Link>
+      </li>
+      <li />
     </ul>
   );
 }
