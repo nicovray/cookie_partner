@@ -17,7 +17,7 @@ function Intro() {
         <div className="div-image-intro">
           <img className="image-intro" src={imageintro} alt="intro desktop" />
         </div>
-        <h1 className="title-intro">WELCOME to our Collaborative Tool</h1>
+        <h1 className="title-intro">Welcome to our Collaborative Tool</h1>
         <p className="explications-intro">
           <p>
             Pin <strong>your idea</strong> on <strong>our dashboard</strong>,

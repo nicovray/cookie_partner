@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+
 .logointro {
   width: 20rem;
   position: absolute;
@@ -15,11 +18,11 @@
   height: 104px;
   left: 3rem;
   top: 50px;
-  font-family: "Inter";
+  font-family: "Lalezar", cursive;
   font-style: normal;
   font-weight: 600;
-  font-size: 2rem;
-  color: #ffffff;
+  font-size: 2.8rem;
+  color: #3e69d1;
 }
 .explications-intro {
   position: absolute;
@@ -31,8 +34,10 @@
   font-style: normal;
   font-weight: 400;
   font-size: 1.2rem;
-
-  color: #000000;
+  color: white;
+}
+p.explications-intro {
+  color: white;
 }
 .button-getstarted {
   position: absolute;
@@ -56,7 +61,7 @@
 
 .plant-icon {
   position: absolute;
-  top: 20rem;
+  top: 30rem;
   left: 65rem;
   width: 20rem;
 }

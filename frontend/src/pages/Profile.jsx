@@ -1,8 +1,10 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable import/no-extraneous-dependencies */
-import React from "react";
+import React, { useEffect } from "react";
 import "./Profile.css";
 import Swal from "sweetalert2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Widget, addResponseMessage } from "react-chat-widget";
 import { Doughnut } from "react-chartjs-2";
 import Navigation from "../components/Navigation";
 import persona1 from "../assets/persona1.jpg";
@@ -11,10 +13,21 @@ import vignette1 from "../assets/vignette1.png";
 import vignette2 from "../assets/vignette2.png";
 import vignette3 from "../assets/vignette3.png";
 import vignette4 from "../assets/vignette4.png";
+import "react-chat-widget/lib/styles.css";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 function Profile2() {
+  useEffect(() => {
+    addResponseMessage(
+      "Hi John, do you have any news on the project's budget?"
+    );
+  }, []);
+
+  const handleNewUserMessage = (newMessage) => {
+    console.log(`New message incoming! ${newMessage}`);
+    // Now send the message throught the backend API
+  };
   const data = {
     labels: ["Java", "Python", "Javascript"],
     datasets: [
@@ -102,6 +115,12 @@ function Profile2() {
             <img className="vignette4" src={vignette4} alt="vignette-projet" />
           </div>
         </div>
+        <Widget
+          handleNewUserMessage={handleNewUserMessage}
+          profileAvatar={persona1}
+          title="My chat with Jessica"
+          subtitle="What's up?"
+        />
       </div>
     </div>
   );

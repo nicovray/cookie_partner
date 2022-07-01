@@ -1,11 +1,14 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable import/no-extraneous-dependencies */
 import "./CardDetail.css";
 import Navigation from "@components/Navigation";
 // import babelckgroundIllu1 from "../assets/backgroundIllu.png";
 // import avancement1 from "../assets/avancement.png";
 // import avancement2 from "../assets/avancement2.png";
+import React, { useEffect } from "react";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
+import { Widget, addResponseMessage } from "react-chat-widget";
 import avancement3 from "../assets/avancement3.png";
 // import avancement4 from "../assets/avancement4.png";
 import avancementGrey1 from "../assets/avancementGrey1.png";
@@ -24,6 +27,16 @@ import "../components/Progression.css";
 import Progression from "../components/Progression";
 
 export default function CardDetail() {
+  useEffect(() => {
+    addResponseMessage(
+      "Hi John, do you have any news on the project's budget?"
+    );
+  }, []);
+
+  const handleNewUserMessage = (newMessage) => {
+    console.log(`New message incoming! ${newMessage}`);
+    // Now send the message throught the backend API
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     Swal.fire({
@@ -68,7 +81,7 @@ export default function CardDetail() {
                   desktop publishing software li{" "}
                 </p>
                 <p className="projectTechno">
-                  <span className="memberSpan">Stack techno</span>
+                  <span className="memberSpan">Stack</span>
                 </p>
                 <div className="technoContainer">
                   <img src={javaLogo} alt="" className="javaLogo" />
@@ -77,7 +90,7 @@ export default function CardDetail() {
                 </div>
 
                 <p className="projectRessource">
-                  <span className="memberSpan">Ressources</span>
+                  <span className="memberSpan">Resources and deadlines</span>
                   <br />
                   It was popularised in the 1960s with the release of Letraset
                   sheets co{" "}
@@ -135,6 +148,12 @@ export default function CardDetail() {
         {/* <div className="illuContainerBackground">
           <img alt="" src={babelckgroundIllu1} className="backgroundIllu1" />
         </div> */}
+        <Widget
+          handleNewUserMessage={handleNewUserMessage}
+          profileAvatar={persona1}
+          title="My chat with Jessica"
+          subtitle="What's up?"
+        />
       </div>
     </div>
   );

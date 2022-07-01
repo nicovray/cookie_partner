@@ -8,8 +8,6 @@
   display: flex;
   flex-direction: column;
   padding-top: 10rem;
-
-  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -70,8 +68,6 @@
   background: #3e69d1;
   border-radius: 5rem;
   border: none;
-
-  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 1.5rem;
