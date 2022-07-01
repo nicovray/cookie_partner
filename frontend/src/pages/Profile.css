@@ -1,7 +1,73 @@
-#myprofile {
-  width: 80%;
-  height: 79.5vw;
+.bloc-color-profile2 {
+  background-color: #9EDECE;
+  border-radius: 50px;
+  width: 95vw;
+  height: 70vw;
+  padding: 2rem;
   margin: auto;
-  background: rgba(94, 201, 175, 0.31);
-  border-radius: 4rem;
+  margin-top: 2rem;
+}
+
+.div-align-bloc-profile {
+  border-radius: 24% 76% 33% 67% / 62% 11% 89% 38% ;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(253, 75, 107, 0.5);
+  display: flex;
+  flex-direction: row;
+}
+.image-profile {
+  width: 10rem;
+  border-radius: 50% 50%;
+}
+
+.texte-profile {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.name-profile2,
+.firstname-profile2,
+.job-profile2,
+.agency-profile2 {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.taches-profile,
+.participe-projet-profile,
+.create-projet-profile,
+.favoris-projet-profile {
+  background-color: #ffff;
+  border-radius: 2rem;
+  width: 16rem;
+  height: 37rem;
+  color: #36BC9B;
+  padding: 1rem;
+}
+
+.bloc-profile-white {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.taches-profile-title,
+.participe-projet-title,
+.create-projet-title,
+.favoris-projet-title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.progression {
+  margin-top: 2rem;;
+  width: 14rem;
 }
